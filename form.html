@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>COVID-19 Survey Form</h1>
+    <form class="form">
+        <div class="form-control">
+            <label for="name" id="s">
+                Name:
+            </label>
+            <input type="text" id="name" placeholder="Enter your name " required>
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="s">
+                Email:
+            </label>
+            <input type="email" id="email" placeholder="Enter your Email" required>
+        </div>
+
+        <div class="form-control">
+            <label for="Age" id="s">
+                Age:
+            </label>
+            <input type="text" id="Age" placeholder="Enter your Age" required>
+        </div>
+
+        <div class="form-control">
+            <label for="City" id="s">
+                City:
+            </label>
+            <input type="text" id="City" placeholder="Enter your Current Location" required>
+        </div>
+
+
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                What is your Gender?
+            </label>
+            <select name="role" id="role">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="TransgenderMale">Transgender Male</option>
+                <option value="TransgenderFemale">Transgender Female</option>
+                <option value="Prefered">I prefer not to say</option>
+                
+            </select>
+        </div>
+
+
+        <div class="form-control">
+            <label id="s">
+                Are you vaccinated?
+            </label>
+
+            <label for="recommend-1">
+                <input type="radio" name="recommend" class="recommend-1">Fully vaccinated</label>
+            </label>
+
+            <label for="recommend-2">
+                <input type="radio" name="recommend" class="recommend-2">Only 1st Dose</label>
+            </label>
+
+            <label for="recommend-3">
+                <input type="radio" name="recommend" class="recommend-3">Not vaccinated</label>
+            </label>
+        </div>
+
+
+        
+        <div class="form-control">
+            <label id="s">Which precautionary actions are you taking?
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1" >
+                <input type="checkbox" name="inp" >Mask
+                  </input>
+              </label>
+            <label for="inp-2" >
+                <input type="checkbox" name="inp" >Sanitizer
+                  </input>
+            </label>
+            <label for="inp-3" >
+                <input type="checkbox" name="inp" >Social Distancing
+                  </input>
+            </label>
+            <label for="inp-4" >
+                <input type="checkbox" name="inp" >Frequent washing of hands
+                  </input>
+            </label>
+            <label for="inp-5" >
+                <input type="checkbox" name="inp" >Bath Daily
+                  </input>
+            </label>
+            <label for="inp-6" >
+                <input type="checkbox" name="inp" >Stay at home when feeling sick
+                  </input>
+            </label>
+            <label for="inp-7" >
+                <input type="checkbox" name="inp" >Avoid large gathering
+                  </input>
+            </label>
+            <label for="inp-8" >
+                <input type="checkbox" name="inp" >Travel caution
+                  </input>
+            </label>
+            <label for="inp-9" >
+                <input type="checkbox" name="inp" >Monitor your health
+                  </input>
+            </label>
+            <label for="inp-10" >
+                <input type="checkbox" name="inp" >Work from home
+                  </input>
+            </label>
+        </div>
+
+
+        <div class="form-control">
+            <label for="Comments" id="A">
+                Provide your recommendations for strategies to combat COVID-19:
+            </label>
+            <textarea name="Comments" id="Comments" placeholder="Enter your Comments here" rows="6" required></textarea>
+        </div>
+
+        <button type="submit" value="submit">submit</button>
+        
+    </form>
+</body>
+</html>
